@@ -194,9 +194,10 @@ function coc_fzf#common#fzf_run_with_preview(opts, ...) abort
   call fzf#run(fzf#wrap(merged, g:coc_fzf_preview_fullscreen))
 endfunction
 
+" TODO: <hoshino> 2023-07-29 21:05:44+08:00 -- options to keybind the default_action 
 let s:default_action = {
   \ 'ctrl-t': 'tab split',
-  \ 'ctrl-x': 'split',
+  \ 'ctrl-h': 'split',
   \ 'ctrl-v': 'vsplit'}
 
 function coc_fzf#common#get_default_file_expect_keys() abort
